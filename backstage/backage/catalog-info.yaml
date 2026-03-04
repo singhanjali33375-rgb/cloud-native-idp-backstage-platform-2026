@@ -1,0 +1,9 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: sample-service
+  description: Sample microservice onboarded via IDP
+spec:
+  type: service
+  lifecycle: production
+  owner: platform-team
