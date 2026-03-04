@@ -1,0 +1,13 @@
+apiVersion: scaffolder.backstage.io/v1beta3
+kind: Template
+metadata:
+  name: python-service-template
+spec:
+  owner: platform-team
+  type: service
+  parameters:
+    - title: Service Name
+      type: string
+  steps:
+    - id: createRepo
+      action: publish:github
